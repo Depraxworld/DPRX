@@ -176,7 +176,7 @@ module top_panel() {
             difference() {
                 rounded_box(width, depth, height_top, edge_r);
                 translate([wall, wall, -1.0]) cube([width-2*wall, depth-2*wall, height_top-wall+1.0]);
-                translate([groove_wall, groove_wall, -0.5]) cube([width-2*groove_wall, depth-2*groove_wall, lip_h+0.5]);
+                translate([groove_wall, groove_wall, -0.5]) cube([width-2*groove_wall, depth-2*groove_wall, lip_h+0.8]);
             }
             corner_boss_top_solid(wall+4, wall+4, 0); corner_boss_top_solid(width-wall-4, wall+4, 90);
             corner_boss_top_solid(width-wall-4, depth-wall-4, 180); corner_boss_top_solid(wall+4, depth-wall-4, 270);
